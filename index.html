@@ -1522,51 +1522,65 @@ $('wishJar').addEventListener('keydown', e => {
 
 /* PLAYLIST: existing Slowly track plus optional local audio files */
 const playlistAudio = $('playlistAudio');
+
 $('slowlyPlayBtn').addEventListener('click', async () => {
-  if (playlistAudio.src && playlistAudio.dataset.track === 'slowly' && !playlistAudio.paused) {
+  if (playlistAudio.dataset.track === 'slowly' && !playlistAudio.paused) {
     playlistAudio.pause();
     $('slowlyPlayBtn').textContent = '▶';
     return;
   }
-  playlistAudio.src = 'slowly.mp3';
+
+  playlistAudio.src = 'https://crussy222.github.io/kasheilah-surprise/slowly.mp3';
   playlistAudio.dataset.track = 'slowly';
+
   try {
     await playlistAudio.play();
     $('slowlyPlayBtn').textContent = 'Ⅱ';
   } catch (err) {
-    $('countdownMessage').textContent = 'Make sure slowly.mp3 is in the website folder to play this track.';
+    console.error('Music playback error:', err);
+    $('countdownMessage').textContent =
+      'The song could not play. Please try again. 💜';
   }
 });
+
 playlistAudio.addEventListener('ended', () => {
   $('slowlyPlayBtn').textContent = '▶';
 });
+
 $('songFiles').addEventListener('change', event => {
   const files = Array.from(event.target.files || []);
+
   files.forEach(file => {
     const url = URL.createObjectURL(file);
     const row = document.createElement('div');
     row.className = 'playlist-track';
+
     const play = document.createElement('button');
     play.type = 'button';
     play.textContent = '▶';
-    play.setAttribute('aria-label', 'Play ' + file.name);
+
     const name = document.createElement('span');
     name.textContent = file.name;
+
     row.append(play, name);
     $('extraTracks').appendChild(row);
+
     play.addEventListener('click', async () => {
       if (playlistAudio.dataset.track === url && !playlistAudio.paused) {
         playlistAudio.pause();
         play.textContent = '▶';
         return;
       }
+
       playlistAudio.src = url;
       playlistAudio.dataset.track = url;
+
       try {
         await playlistAudio.play();
         $('extraTracks').querySelectorAll('button').forEach(b => b.textContent = '▶');
         play.textContent = 'Ⅱ';
       } catch (err) {
+        console.error(err);
         play.textContent = '▶';
       }
     });
