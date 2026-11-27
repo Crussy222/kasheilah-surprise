@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Dearest Kasheilah 💜</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #fff0fa;
+  --bg2: #f6dcf4;
+  --card: rgba(255,255,255,.82);
+  --text: #52264e;
+  --muted: #865b80;
+  --pink: #ed73b7;
+  --purple: #a56bd5;
+  --gold: #e5b95c;
+  --shadow: 0 12px 35px rgba(128,65,132,.13);
+}
+
+body.night {
+  --bg: #130d1c;
+  --bg2: #26132e;
+  --card: rgba(45,27,53,.9);
+  --text: #fff0fa;
+  --muted: #d4b4d9;
+  --pink: #ff83c8;
+  --purple: #b889ef;
+  --gold: #f4d28a;
+  --shadow: 0 12px 35px rgba(0,0,0,.3);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, var(--bg2), transparent 40%),
+    radial-gradient(circle at 90% 80%, var(--bg2), transparent 40%),
+    var(--bg);
+  transition: background .5s, color .5s;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+button { font-family: inherit; cursor: pointer; }
+.hidden { display: none !important; }
+
+/* PROPOSAL */
+
+#proposal {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.proposal-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 38px 22px;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.envelope {
+  font-size: 75px;
+  animation: envelopeFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes envelopeFloat {
+  50% { transform: translateY(-12px) rotate(4deg); }
+}
+
+.proposal-card h1 {
+  font-size: clamp(29px, 7vw, 43px);
+  line-height: 1.2;
+  margin: 20px 0 12px;
+}
+
+.proposal-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.proposal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  min-height: 55px;
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 23px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.btn:active { transform: scale(.96); }
+
+.yes {
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  color: white;
+  box-shadow: 0 7px 20px rgba(181,94,177,.3);
+}
+
+.no {
+  background: #eee0ef;
+  color: #6c4774;
+  position: relative;
+}
+
+.honest-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* HEADER AND SECTIONS */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(180,120,180,.15);
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.theme-btn {
+  background: var(--bg2);
+  color: var(--text);
+  border: 1px solid rgba(180,120,180,.2);
+  border-radius: 25px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 20px 16px 100px;
+}
+
+section {
+  padding: 35px 0;
+  scroll-margin-top: 70px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hero .small {
+  color: var(--pink);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 8vw, 58px);
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.hero-heart {
+  font-size: 48px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.2); }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(180,120,180,.15);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+  padding: 25px;
+  margin: 18px 0;
+  backdrop-filter: blur(10px);
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(26px, 6vw, 36px);
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.letter {
+  line-height: 1.95;
+  white-space: pre-line;
+  font-size: 15px;
+}
+
+.letter strong { color: var(--pink); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.tile {
+  background: var(--card);
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 19px;
+  border: 1px solid rgba(180,120,180,.15);
+  box-shadow: var(--shadow);
+}
+
+.tile span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+
+.tile p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* OPEN WHEN LETTERS */
+
+.open-card {
+  width: 100%;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid rgba(180,120,180,.2);
+  border-radius: 18px;
+  padding: 17px;
+  text-align: left;
+  margin: 7px 0;
+  font-weight: 700;
+}
+
+.open-message {
+  display: none;
+  color: var(--muted);
+  line-height: 1.8;
+  padding: 12px 5px 5px;
+  font-weight: 400;
+}
+
+.open-card.active .open-message { display: block; }
+
+/* GIFT */
+
+.gift-box {
+  text-align: center;
+  font-size: 80px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.gift-box:active { transform: scale(1.15) rotate(8deg); }
+
+.gift-message {
+  display: none;
+  color: var(--pink);
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* UNIVERSE */
+
+.universe {
+  min-height: 220px;
+  background: linear-gradient(145deg, #25123e, #56316d, #21162e);
+  color: white;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.universe-stars {
+  font-size: 22px;
+  line-height: 2.5;
+  letter-spacing: 8px;
+  animation: stars 3s ease-in-out infinite alternate;
+}
+
+@keyframes stars {
+  to { opacity: .45; }
+}
+
+.universe h3 { font-size: 27px; }
+
+/* COUPONS */
+
+.coupon {
+  background: linear-gradient(135deg, var(--bg2), var(--card));
+  border: 1px dashed var(--pink);
+  border-radius: 17px;
+  padding: 17px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.coupon strong { color: var(--pink); }
+
+/* 3D CARTOON HUG ANIMATION */
+.hug-stage {
+  width: min(100%, 520px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #f7d8ed, #e6d5fa);
+  margin: 22px auto;
+  isolation: isolate;
+}
+
+body.night .hug-stage {
+  background: linear-gradient(135deg, #3c214b, #21172f);
+}
+
+.hug-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("hug-couple-sprite.png");
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  border-radius: 22px;
+  animation: none;
+}
+
+.hug-stage.hugging .hug-scene {
+  animation: hugStory 5.4s steps(1, end) 1 forwards;
+}
+
+@keyframes hugStory {
+  0%, 10% { background-position: 0% 0%; }
+  12%, 21% { background-position: 50% 0%; }
+  23%, 32% { background-position: 100% 0%; }
+  34%, 43% { background-position: 0% 50%; }
+  45%, 54% { background-position: 50% 50%; }
+  56%, 65% { background-position: 100% 50%; }
+  67%, 76% { background-position: 0% 100%; }
+  78%, 87% { background-position: 50% 100%; }
+  89%, 100% { background-position: 100% 100%; }
+}
+
+.hug-stage::after {
+  content: "💗  ✨  💕";
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 18px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hug-stage.hugging::after {
+  animation: hugSparkles 2.8s ease-in-out;
+}
+
+@keyframes hugSparkles {
+  0%, 100% { opacity: 0; transform: translateY(12px); }
+  25%, 75% { opacity: 1; transform: translateY(0); }
+}
+
+.hug-controls { text-align: center; }
+.hug-controls .btn { margin-top: 8px; }
+#hugMsg {
+  color: var(--pink);
+  font-weight: 700;
+  min-height: 28px;
+  line-height: 1.6;
+}
+
+@media (max-width: 520px) {
+  .hug-stage {
+    width: 100%;
+    border-radius: 18px;
+  }
+  .hug-scene { border-radius: 18px; }
+}
+
+/* EXTRA INTERACTIVE LOVE FEATURES */
+.feature-panel {
+  background: var(--card);
+  border: 1px solid rgba(180,120,180,.18);
+  border-radius: 22px;
+  padding: 22px;
+  margin: 18px 0;
+  box-shadow: var(--shadow);
+}
+.feature-panel p { color: var(--muted); line-height: 1.7; }
+.feature-btn {
+  border: 0;
+  border-radius: 24px;
+  padding: 12px 18px;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  box-shadow: 0 7px 18px rgba(181,94,177,.22);
+}
+.love-note {
+  min-height: 74px;
+  padding: 16px;
+  margin-top: 15px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--bg2), rgba(255,255,255,.35));
+  color: var(--text);
+  line-height: 1.7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.countdown-row input, .playlist-file {
+  max-width:100%;
+  padding:11px;
+  border-radius:12px;
+  border:1px solid rgba(180,120,180,.3);
+  background:var(--bg);
+  color:var(--text);
+  font:inherit;
+}
+.countdown-display {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+  margin-top:16px;
+}
+.countdown-unit {
+  background:var(--bg2);
+  border-radius:14px;
+  padding:13px 5px;
+  text-align:center;
+}
+.countdown-unit strong { display:block; font-size:clamp(20px,5vw,30px); color:var(--pink); }
+.countdown-unit span { font-size:11px; color:var(--muted); }
+.jar-wrap { text-align:center; padding:8px 0; }
+.wish-jar {
+  display:inline-flex;
+  width:130px; height:150px;
+  align-items:center; justify-content:center;
+  font-size:88px;
+  cursor:pointer;
+  filter:drop-shadow(0 9px 12px rgba(130,70,150,.2));
+  transition:transform .25s;
+}
+.wish-jar:active { transform:rotate(-9deg) scale(1.08); }
+.playlist-track {
+  display:flex; align-items:center; gap:10px;
+  padding:11px 0; border-bottom:1px solid rgba(180,120,180,.15);
+}
+.playlist-track:last-child { border-bottom:0; }
+.playlist-track button {
+  border:0; border-radius:50%; width:38px; height:38px;
+  color:white; background:linear-gradient(135deg,var(--pink),var(--purple));
+}
+.playlist-track span { flex:1; min-width:0; font-size:14px; }
+.quiz-options { display:grid; gap:9px; margin-top:14px; }
+.quiz-option {
+  width:100%; text-align:left; padding:13px 15px;
+  border:1px solid rgba(180,120,180,.25);
+  border-radius:14px; background:var(--bg2); color:var(--text);
+  font:inherit; cursor:pointer;
+}
+.quiz-feedback { min-height:28px; color:var(--pink); font-weight:700; margin-top:12px; }
+.secret-panel { display:none; text-align:center; }
+.secret-panel.revealed { display:block; animation:secretPop .65s ease both; }
+@keyframes secretPop { from {opacity:0; transform:translateY(15px) scale(.96)} to {opacity:1; transform:none} }
+.dream-world {
+  min-height:260px; overflow:hidden; position:relative; border-radius:22px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; color:white; padding:28px 15px;
+  background:radial-gradient(circle at 50% 40%,#814da7,#321b54 55%,#160f2c);
+}
+.dream-world::before {
+  content:""; position:absolute; inset:-40%;
+  background-image:radial-gradient(#fff 1px,transparent 1.8px);
+  background-size:37px 37px; opacity:.7;
+  animation:starDrift 24s linear infinite;
+}
+@keyframes starDrift { to { transform:translate(55px,-55px); } }
+.dream-world > * { position:relative; z-index:1; }
+.dream-moon { font-size:45px; animation:moonFloat 3s ease-in-out infinite; }
+@keyframes moonFloat { 50% { transform:translateY(-9px) rotate(5deg); } }
+.dream-hearts { font-size:27px; letter-spacing:10px; animation:heartGlow 2s ease-in-out infinite alternate; }
+@keyframes heartGlow { to { transform:scale(1.12); filter:drop-shadow(0 0 12px #ff9cdd); } }
+.treasure-heart {
+  display:inline-block; margin:7px 5px; padding:5px 8px;
+  border:0; border-radius:20px; background:transparent;
+  color:var(--pink); opacity:.28; cursor:pointer; font-size:17px;
+  transition:opacity .2s, transform .2s;
+}
+.treasure-heart:hover { opacity:1; transform:scale(1.2); }
+#heartTreasureStatus { text-align:center; color:var(--muted); font-size:13px; }
+@media(max-width:420px) {
+  .feature-panel { padding:17px; }
+  .countdown-display { gap:5px; }
+  .countdown-unit { padding:10px 2px; }
+}
+
+/* FINAL SURPRISE */
+
+.final {
+  text-align: center;
+  padding: 45px 15px;
+  background: linear-gradient(135deg, var(--bg2), var(--card));
+  border-radius: 25px;
+}
+
+.final .big-heart { font-size: 60px; }
+
+/* MUSIC PLAYER */
+
+.music-player {
+  position: fixed;
+  z-index: 30;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 390px);
+  padding: 11px 14px;
+  background: var(--card);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(180,120,180,.25);
+  box-shadow: var(--shadow);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.music-player button {
+  border: none;
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  color: white;
+  font-size: 16px;
+}
+
+.music-info {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+}
+
+.music-info strong { display: block; }
+.music-info span { color: var(--muted); }
+
+/* FLOATING EMOJIS */
+
+.floating {
+  position: fixed;
+  bottom: -35px;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+  opacity: .8;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 30px 10px 80px;
+  font-size: 13px;
+}
+
+@media(max-width: 520px) {
+  main { padding-left: 13px; padding-right: 13px; }
+  .card { padding: 19px; }
+  .grid { gap: 10px; }
+  .tile { padding: 16px 9px; }
+  .proposal-card { padding: 30px 18px; }
+  .letter { font-size: 14px; }
+}
+/* LOVE ENVELOPE ANIMATION */
+.envelope-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 145px;
+  margin: 10px auto 15px;
+  perspective: 800px;
+}
+
+.envelope {
+  position: relative;
+  width: 115px;
+  height: 78px;
+  background: #c084fc;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  box-shadow: 0 8px 22px rgba(192, 132, 252, 0.3);
+}
+
+.envelope-back {
+  position: absolute;
+  inset: 0;
+  background: #a855f7;
+  border-radius: 5px;
+}
+
+.envelope-letter {
+  position: absolute;
+  width: 88px;
+  height: 65px;
+  background: #fff0fa;
+  color: #a855f7;
+  left: 13px;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  border-radius: 4px;
+  transition: transform 0.7s ease;
+}
+
+.envelope-flap {
+  position: absolute;
+  inset: 0;
+  background: #e9a8ff;
+  clip-path: polygon(0 0, 100% 0, 50% 58%);
+  transform-origin: top;
+  transition: transform 0.7s ease;
+  z-index: 4;
+}
+
+.envelope-front {
+  position: absolute;
+  inset: 0;
+  background: #c084fc;
+  clip-path: polygon(0 100%, 50% 43%, 100% 100%);
+  z-index: 3;
+}
+
+.envelope-heart {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  transition: opacity 0.3s ease;
+}
+
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.envelope.open .envelope-letter {
+  transform: translateY(-48px);
+}
+
+.envelope.open .envelope-heart {
+  opacity: 0;
+}
+
+.love-note {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-top: 18px;
+}
+
+.love-note.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.envelope-wrapper.opening {
+  animation: envelopeBounce 0.7s ease;
+}
+
+@keyframes envelopeBounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  70% { transform: translateY(3px); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PROPOSAL -->
+
+<div id="proposal">
+  <div class="proposal-card">
+    <div class="envelope">💌</div>
+    <p>A LITTLE QUESTION FROM YOUR BABY</p>
+    <h1>Will you be my girlfriend? 🥹❤️</h1>
+    <p>I have something special prepared for you, Kasheilah. 🌷</p>
+
+    <div class="proposal-buttons">
+      <button class="btn yes" id="yesBtn">YES! 💜</button>
+      <button class="btn no" id="noBtn">NO 🙈</button>
+    </div>
+
+    <p>Choose wisely 😂❤️</p>
+    
+  </div>
+</div>
+
+<!-- MAIN PAGE -->
+
+<div id="mainPage" class="hidden">
+
+<header>
+  <div class="brand">For Kasheilah 💜</div>
+  <button class="theme-btn" id="themeBtn">🌙 Night Mode</button>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-heart">💗</div>
+  <p class="small">A little world made just for you</p>
+  <h1>My Dearest Kasheilah 🌷</h1>
+  <p>To my baby Kasheilah, from her baby Crussy 💌❤️</p>
+  <p>Every little part of this page carries a reminder of how special you are. ✨</p>
+  <button class="treasure-heart" aria-label="Find a hidden heart" data-treasure="1">♡</button>
+</section>
+
+<!-- LETTER -->
+
+<section>
+  <h2 class="section-title">A Letter For You 💌</h2>
+  <p class="section-subtitle">Something I've been wanting to tell you.</p>
+
+  <div class="card letter">
+<strong>My Dearest Kasheilah 💜🌷
+
+My baby,</strong>
+
+I don't think words will ever be enough to explain how special you are to me, but I still want to try. 🥹❤️
+
+Ever since you became part of my life, you've given me so many reasons to smile. Your presence brings a kind of happiness that I can't easily put into words. Even the smallest moments with you mean so much to me. 🦋💕
+
+I love the way you make ordinary days feel special, the way you make me smile without even trying, and how simply being you makes you so precious to me. 🌸
+
+I want you to know that I don't just want to be around for the happy moments. I want to celebrate your achievements, encourage you when things get difficult, listen when you need someone, and remind you how amazing you are whenever you forget. 🫂💗
+
+I may not always have the perfect words, and I may not get everything right, but I promise to keep learning, growing and making an effort. I want us to create beautiful memories, laugh over silly things, support each other's dreams and enjoy every little moment together. 🥰✨
+
+You deserve genuine happiness, patience, kindness and a love that makes you feel appreciated. And I hope I can give you more reasons to feel all those things. ❤️
+
+So today, I have one little question for you, and I hope this is the beginning of something even more beautiful for us. 💍🌹
+
+<strong>With all my love,
+Your baby Crussy ❤️😘</strong>
+  </div>
+</section>
+
+<!-- REASONS -->
+
+<section>
+  <h2 class="section-title">Reasons You're Special 🌸</h2>
+  <p class="section-subtitle">A few little reminders of how precious you are.</p>
+
+  <div class="grid">
+    <div class="tile">
+      <span>😊</span>
+      <strong>Your smile</strong>
+      <p>It makes ordinary moments brighter.</p>
+    </div>
+    <div class="tile">
+      <span>🦋</span>
+      <strong>Your personality</strong>
+      <p>There is something so special about you.</p>
+    </div>
+    <div class="tile">
+      <span>💗</span>
+      <strong>Your heart</strong>
+      <p>You deserve kindness and appreciation.</p>
+    </div>
+    <div class="tile">
+      <span>✨</span>
+      <strong>Simply you</strong>
+      <p>You don't need to be anyone else.</p>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERSE -->
+
+<section>
+  <h2 class="section-title">Our Little Universe 🌌</h2>
+  <p class="section-subtitle">Somewhere in this big universe, I'm grateful our paths crossed.</p>
+
+  <div class="universe">
+    <div class="universe-stars">✦ · ✧ · ★ · ✦ · ✧</div>
+    <h3>You are my favourite little universe 💜</h3>
+    <p>May we keep making beautiful memories, one little moment at a time.</p>
+    <div class="universe-stars">✧ · ✦ · ★ · ✧ · ✦</div>
+    <button class="treasure-heart" aria-label="Find a hidden heart" data-treasure="2">♡</button>
+  </div>
+</section>
+
+<!-- OPEN WHEN -->
+
+<section>
+  <h2 class="section-title">For the Days You Need a Little Love 💗</h2>
+  <p class="section-subtitle">Open any message whenever you need it.</p>
+
+  <button class="open-card">
+    💌 When you miss me
+    <span class="open-message">
+      Even when we aren't together, I hope you remember that you are appreciated. Distance or a busy day doesn't change the beautiful memories we share. Sending you the biggest virtual hug. 🫂❤️
+    </span>
+  </button>
+
+  <button class="open-card">
+    🌧️ When you're having a bad day
+    <span class="open-message">
+      Take things one step at a time, my dear. You don't have to have everything figured out today. Be gentle with yourself. Better moments can still be ahead. 💗
+    </span>
+  </button>
+
+  <button class="open-card">
+    🦋 When you doubt yourself
+    <span class="open-message">
+      Never forget that you are capable, valuable and worthy of good things. Don't let one difficult moment make you question all the wonderful things about yourself. ✨
+    </span>
+  </button>
+
+  <button class="open-card">
+    🌷 When you need encouragement
+    <span class="open-message">
+      Keep going, one step at a time. I believe in your ability to keep learning and growing. Your dreams matter, and I hope you never stop believing in them. ❤️
+    </span>
+  </button>
+
+  <button class="open-card">
+    😂 When you need a smile
+    <span class="open-message">
+      Official reminder: You are required to smile right now. This is an order from your favourite person. 😂💕
+    </span>
+  </button>
+
+  <button class="open-card">
+    🥹 When you want to feel appreciated
+    <span class="open-message">
+      Thank you for being you. Thank you for the little moments, the conversations, the laughter and the memories. You are appreciated more than you know. 🌸
+    </span>
+  </button>
+</section>
+
+<!-- GIFT -->
+
+<section>
+  <h2 class="section-title">A Little Mystery Gift 🎁</h2>
+  <p class="section-subtitle">There's something waiting for you. Tap the gift!</p>
+
+  <div class="card">
+    <div class="gift-box" id="giftBox">🎁</div>
+    <div class="gift-message" id="giftMessage">
+      <h3>A lifetime of little moments! 💜</h3>
+      <p>More laughter, more conversations, more memories and more reasons to smile. This gift comes with unlimited appreciation. 🌹</p>
+      <div style="font-size:45px">💐💗✨</div>
+    </div>
+  </div>
+</section>
+
+<!-- COUPONS -->
+
+<section>
+  <h2 class="section-title">Little Love Coupons 🎟️</h2>
+  <p class="section-subtitle">A few promises for our special moments.</p>
+
+  <div class="coupon">
+    <strong>🫂 ONE BIG HUG</strong>
+    <p>Redeem whenever you need comfort.</p>
+  </div>
+
+  <div class="coupon">
+    <strong>☕ QUALITY TIME</strong>
+    <p>A special moment together, with no rush.</p>
+  </div>
+
+  <div class="coupon">
+    <strong>😂 ONE SMILE MISSION</strong>
+    <p>I'll do my best to make you laugh.</p>
+  </div>
+
+  <div class="coupon">
+    <strong>🌹 A LITTLE SURPRISE</strong>
+    <p>Something thoughtful, just for you.</p>
+  </div>
+  <button class="treasure-heart" aria-label="Find a hidden heart" data-treasure="3">♡</button>
+</section>
+
+
+<!-- LITTLE LOVE NOTE -->
+<section>
+  <h2 class="section-title">Pick a Little Love Note 💌</h2>
+  <p class="section-subtitle">Tap the envelope whenever you want a tiny reminder.</p>
+
+  <div class="feature-panel" style="text-align:center">
+
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="envelope" id="loveEnvelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">💌</div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-heart">💜</div>
+      </div>
+    </div>
+
+    <button class="feature-btn" id="noteBtn">
+      OPEN YOUR LITTLE LOVE NOTE 💌
+    </button>
+
+    <div class="love-note" id="loveNote">
+      A little surprise is waiting inside…
+    </div>
+
+  </div>
+</section>
+
+<!-- SPECIAL COUNTDOWN -->
+<section>
+  <h2 class="section-title">Our Special Countdown ⏳</h2>
+  <p class="section-subtitle">Choose a date that means something to you both.</p>
+  <div class="feature-panel">
+    <label for="specialDate"><strong>Choose your special date and time</strong></label>
+    <div class="countdown-row" style="margin-top:12px">
+      <input id="specialDate" type="datetime-local">
+      <button class="feature-btn" id="countdownBtn">START COUNTDOWN</button>
+    </div>
+    <div class="countdown-display" id="countdownDisplay">
+      <div class="countdown-unit"><strong>--</strong><span>DAYS</span></div>
+      <div class="countdown-unit"><strong>--</strong><span>HOURS</span></div>
+      <div class="countdown-unit"><strong>--</strong><span>MINUTES</span></div>
+      <div class="countdown-unit"><strong>--</strong><span>SECONDS</span></div>
+    </div>
+    <p id="countdownMessage" style="text-align:center">Pick a date above to start counting down. 💜</p>
+  </div>
+</section>
+
+<!-- WISH JAR -->
+<section>
+  <h2 class="section-title">The Wish Jar ✨</h2>
+  <p class="section-subtitle">Tap the jar and let a little wish find you.</p>
+  <div class="feature-panel jar-wrap">
+    <div class="wish-jar" id="wishJar" role="button" tabindex="0" aria-label="Open the wish jar">🏺</div>
+    <div class="love-note" id="wishMessage">Your little wish is waiting inside…</div>
+    <button class="feature-btn" id="wishBtn" style="margin-top:14px">PICK A WISH 🌟</button>
+  </div>
+</section>
+
+<!-- LITTLE PLAYLIST -->
+<section>
+  <h2 class="section-title">Our Little Playlist 🎵</h2>
+  <p class="section-subtitle">A little music corner for songs that make you think of each other.</p>
+  <div class="feature-panel">
+    <div class="playlist-track">
+      <button type="button" id="slowlyPlayBtn" aria-label="Play Slowly">▶</button>
+      <span><strong>Slowly</strong><br><small style="color:var(--muted)">Meddy · Our first little soundtrack</small></span>
+      <span>💜</span>
+    </div>
+    <div id="extraTracks"></div>
+    <label for="songFiles"><strong>Add songs from your computer</strong></label>
+    <p style="font-size:12px;margin:5px 0 12px">Choose MP3 or audio files. They play in this browser on this device.</p>
+    <input class="playlist-file" id="songFiles" type="file" accept="audio/*" multiple>
+    <audio id="playlistAudio" preload="none"></audio>
+  </div>
+</section>
+
+<!-- FUN LOVE QUIZ -->
+<section>
+  <h2 class="section-title">A Little Love Quiz 🦋</h2>
+  <p class="section-subtitle">A few fun questions about this little world made for you.</p>
+  <div class="feature-panel">
+    <h3 id="quizQuestion">1. Which song welcomes you into this little world?</h3>
+    <div class="quiz-options" id="quizOptions">
+      <button class="quiz-option" data-answer="wrong">Perfect – Ed Sheeran</button>
+      <button class="quiz-option" data-answer="right">Slowly – Meddy</button>
+      <button class="quiz-option" data-answer="wrong">A random dance song 😂</button>
+    </div>
+    <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+    <button class="feature-btn" id="nextQuizBtn" style="display:none">NEXT QUESTION 💗</button>
+  </div>
+</section>
+
+<!-- SECRET SURPRISE -->
+<section>
+  <h2 class="section-title">A Secret Just for You 🎁</h2>
+  <p class="section-subtitle">There's something hidden behind this little button.</p>
+  <div class="feature-panel" style="text-align:center">
+    <div style="font-size:50px">🎀</div>
+    <button class="feature-btn" id="secretRevealBtn">UNWRAP YOUR SURPRISE</button>
+    <div class="secret-panel" id="secretPanel">
+      <h3>Surprise, my dearest Kasheilah! 💜</h3>
+      <p>You are never just another person in my day. You are someone whose happiness, dreams and little victories deserve to be celebrated. I hope this page makes you smile today and whenever you visit it. 🌷</p>
+      <div style="font-size:35px">💐💗✨🦋</div>
+    </div>
+  </div>
+</section>
+
+<!-- DREAM WORLD -->
+<section>
+  <h2 class="section-title">Our Little Dream World 🌌</h2>
+  <p class="section-subtitle">A tiny universe glowing just for this moment.</p>
+  <div class="dream-world">
+    <div class="dream-moon">🌙</div>
+    <h2>Under the same sky…</h2>
+    <p>May our days be full of kindness, laughter and beautiful little memories.</p>
+    <div class="dream-hearts">💜 ✨ 💗</div>
+  </div>
+</section>
+
+<div class="feature-panel">
+  <p id="heartTreasureStatus">Psst… three little hearts are hiding around this page. Find them all. 💗</p>
+  <div class="secret-panel" id="treasureReward">
+    <h3>You found all three hidden hearts! 🥹💜</h3>
+    <p>Your reward: one extra-big virtual hug, a thousand little smiles and a reminder that you are appreciated. 🫂🌷</p>
+  </div>
+</div>
+
+
+<!-- HUG SECTION -->
+
+<section id="hugsSection">
+  <h2 class="section-title">A Hug From Me to You 🫂</h2>
+  <p class="section-subtitle">Whenever you need a hug, come here. 💗</p>
+
+  <div class="card">
+
+    <div class="hug-stage" id="hugStage">
+
+      <span class="hug-heart one">💗</span>
+      <span class="hug-heart two">✨</span>
+      <span class="hug-heart three">💕</span>
+
+      <div class="hug-scene" role="img"
+           aria-label="A 3D cartoon couple walking together and sharing a warm hug"></div>
+
+    </div>
+
+    <div class="hug-controls">
+      <h3>Sending you a warm hug! 💜</h3>
+      <p>Tap the button and watch us hug.</p>
+
+      <button class="btn yes" id="hugBtn">
+        SEND ME A HUG 🫂
+      </button>
+
+      <p id="hugMsg" aria-live="polite"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL -->
+
+<section>
+  <div class="final">
+    <div class="big-heart">💗</div>
+    <h2 class="section-title">One Last Thing...</h2>
+    <p>Thank you for being part of my world, Kasheilah.</p>
+    <p>I hope this little surprise reminds you that you are special, appreciated and deserving of beautiful things.</p>
+    <h2>With love, your baby Crussy ❤️😘</h2>
+    <div style="font-size:35px">🌹💐🦋✨</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Made with love, just for Kasheilah 💜
+  <br>From her baby Crussy ❤️
+</footer>
+
+</div>
+
+<!-- MUSIC PLAYER -->
+
+<div class="music-player hidden" id="musicPlayer">
+  <button id="musicBtn" aria-label="Pause or play music">▶</button>
+  <div class="music-info">
+    <strong>Slowly 💜</strong>
+    <span>Meddy · A song for you</span>
+  </div>
+</div>
+
+<audio id="loveSong" src="slowly.mp3" loop preload="auto"></audio>
+
+<script>
+const $ = id => document.getElementById(id);
+const proposal = $('proposal');
+const mainPage = $('mainPage');
+const song = $('loveSong');
+
+/* YES BUTTON */
+
+$('yesBtn').addEventListener('click', async () => {
+  proposal.classList.add('hidden');
+  mainPage.classList.remove('hidden');
+  $('musicPlayer').classList.remove('hidden');
+
+  try {
+    await song.play();
+  } catch (error) {
+    console.log('Music could not start automatically:', error);
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* NO BUTTON */
+
+const noBtn = $('noBtn');
+
+function moveNoButton() {
+  const card = document.querySelector('.proposal-card');
+  const maxX = Math.max(0, card.clientWidth - noBtn.offsetWidth - 30);
+
+  noBtn.style.position = 'relative';
+  noBtn.style.left = (Math.random() * maxX - maxX / 2) + 'px';
+  noBtn.style.top = (Math.random() * 70 - 35) + 'px';
+}
+
+noBtn.addEventListener('mouseenter', moveNoButton);
+
+noBtn.addEventListener('touchstart', event => {
+  event.preventDefault();
+  moveNoButton();
+});
+
+
+
+/* MUSIC */
+
+$('musicBtn').addEventListener('click', async () => {
+  if (song.paused) {
+    try {
+      await song.play();
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+    song.pause();
+  }
+});
+
+song.addEventListener('play', () => {
+  $('musicBtn').textContent = 'Ⅱ';
+});
+
+song.addEventListener('pause', () => {
+  $('musicBtn').textContent = '▶';
+});
+
+/* DAY AND NIGHT MODE */
+
+$('themeBtn').addEventListener('click', () => {
+  document.body.classList.toggle('night');
+
+  $('themeBtn').textContent =
+    document.body.classList.contains('night')
+      ? '☀️ Day Mode'
+      : '🌙 Night Mode';
+});
+
+/* OPEN WHEN MESSAGES */
+
+document.querySelectorAll('.open-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+
+/* GIFT BOX */
+
+$('giftBox').addEventListener('click', () => {
+  $('giftMessage').style.display = 'block';
+  $('giftBox').textContent = '💝';
+});
+
+/* FLOATING EMOJIS */
+
+function spawn(count = 12) {
+  const emojis = ['💗', '💕', '🌸', '🌹', '💋', '✨', '😘'];
+
+  for (let i = 0; i < count; i++) {
+    const item = document.createElement('div');
+
+    item.className = 'floating';
+    item.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+    item.style.left = Math.random() * 100 + 'vw';
+    item.style.fontSize = (17 + Math.random() * 20) + 'px';
+    item.style.animationDuration = (3 + Math.random() * 3) + 's';
+
+    document.body.appendChild(item);
+
+    setTimeout(() => item.remove(), 6500);
+  }
+}
+
+setInterval(() => {
+  if (!mainPage.classList.contains('hidden')) {
+    spawn(2);
+  }
+}, 1800);
+
+/* HUG BUTTON */
+
+$('hugBtn').addEventListener('click', () => {
+  const stage = $('hugStage');
+  const scene = stage.querySelector('.hug-scene');
+  const button = $('hugBtn');
+
+  // Start from the first frame every time, then play once when requested.
+  stage.classList.remove('hugging');
+  scene.style.animation = 'none';
+  scene.style.backgroundPosition = '0% 0%';
+  void scene.offsetWidth;
+  scene.style.animation = '';
+  stage.classList.add('hugging');
+
+  button.textContent = 'SENDING LOVE ❤️';
+  $('hugMsg').textContent =
+    'A warm hug is on its way… 🫂💗';
+  spawn(25);
+
+  window.setTimeout(() => {
+    button.textContent = 'SEND ME A HUG 🫂';
+    $('hugMsg').textContent =
+      'HUG DELIVERED! 🫂❤️ A special 3D hug, just for you!';
+  }, 5400);
+});
+
+/* DAILY LITTLE LOVE NOTES */
+const loveNotes = [
+  "You deserve gentle days, genuine smiles and people who celebrate you. 💜",
+  "If today feels a little heavy, take it one step at a time. I'm cheering you on. 🌷",
+  "A tiny reminder: you are appreciated exactly as you are. 🦋",
+  "I hope something unexpectedly lovely happens to you today. ✨",
+  "Sending you a pocket-sized hug to keep with you. 🫂",
+  "Never forget how much beauty you bring into ordinary moments. 💗",
+  "May your dreams keep growing and your heart keep finding reasons to smile. 🌸",
+
+  "You make ordinary moments feel a little more magical. 💕",
+  "I hope today gives you a hundred little reasons to smile. 🌻",
+  "Never doubt how special you are. You matter more than you know. 💜",
+  "May your heart always find peace, happiness and beautiful surprises. 🦋",
+  "You deserve all the kindness you so freely give. 🌷",
+  "A little reminder that someone is always wishing you the best. ❤️",
+  "Keep being your wonderful self. The world needs your light. ✨",
+  "May your morning be peaceful and your evening be beautiful. 🌅",
+  "You are worthy of beautiful things and beautiful opportunities. 💗",
+  "I hope you never run out of reasons to believe in yourself. 🌸",
+  "Here's a tiny reminder to take a deep breath and enjoy today. 🫶",
+  "Your happiness matters. Never forget to make time for yourself. 💜",
+  "May every new day bring you closer to your dreams. 🌙",
+  "You deserve laughter that makes your cheeks hurt. 😂💕",
+  "Even the smallest steps forward are worth celebrating. 🌷",
+  "I hope something makes you smile unexpectedly today. 😊",
+  "You are a beautiful part of this world. Never forget that. 🦋",
+  "May life surprise you with wonderful opportunities. ✨",
+  "Sending you a little sunshine for whatever today brings. ☀️",
+  "Be proud of how far you've come. Keep going. 💪",
+  "May your worries feel lighter and your hopes feel bigger. 💗",
+  "Today is another chance to create beautiful memories. 🌸",
+  "You deserve patience, understanding and genuine happiness. 💜",
+  "Never stop dreaming about the beautiful future ahead of you. 🌟",
+  "A little virtual hug for whenever you need one. 🫂",
+  "May your smile find its way back even on difficult days. 🌻",
+  "You are appreciated, celebrated and deserving of kindness. ❤️",
+  "I hope your day is as lovely as the little things that make you happy. 🌹",
+  "Remember to rest, breathe and give yourself credit. 💕",
+  "There is so much beauty waiting for you in the days ahead. 🦋",
+  "Keep shining in your own unique way. ✨",
+  "May happiness find you in the most unexpected places. 🌷",
+  "Here's a reminder that you are enough, exactly as you are. 💜"
+];
+
+function getTodayLoveNoteIndex() {
+  const now = new Date();
+  const dayNumber = Math.floor(
+    Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / 86400000
+  );
+
+  return ((dayNumber % loveNotes.length) + loveNotes.length) % loveNotes.length;
+}
+
+function showTodayLoveNote() {
+  $('loveNote').textContent = loveNotes[getTodayLoveNoteIndex()];
+}
+
+let dailyNoteTimer;
+
+function scheduleDailyLoveNote() {
+  clearTimeout(dailyNoteTimer);
+  showTodayLoveNote();
+
+  const now = new Date();
+  const midnight = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1,
+    0, 0, 0, 50
+  );
+
+  dailyNoteTimer = setTimeout(() => {
+    scheduleDailyLoveNote();
+  }, midnight.getTime() - now.getTime());
+}
+
+scheduleDailyLoveNote();
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) scheduleDailyLoveNote();
+});
+
+/* ENVELOPE OPENING EFFECT */
+$('noteBtn').addEventListener('click', () => {
+  const envelope = $('loveEnvelope');
+  const wrapper = $('envelopeWrapper');
+  const note = $('loveNote');
+
+  if (envelope.classList.contains('open')) {
+    envelope.classList.remove('open');
+    note.classList.remove('show');
+    $('noteBtn').textContent = 'OPEN YOUR LITTLE LOVE NOTE 💌';
+
+    setTimeout(() => {
+      envelope.classList.add('open');
+      wrapper.classList.remove('opening');
+      void wrapper.offsetWidth;
+      wrapper.classList.add('opening');
+
+      showTodayLoveNote();
+      note.classList.add('show');
+      $('noteBtn').textContent = 'READ YOUR LOVE NOTE AGAIN 💜';
+    }, 350);
+
+    return;
+  }
+
+  envelope.classList.add('open');
+  wrapper.classList.remove('opening');
+  void wrapper.offsetWidth;
+  wrapper.classList.add('opening');
+
+  showTodayLoveNote();
+
+  setTimeout(() => {
+    note.classList.add('show');
+    $('noteBtn').textContent = 'READ YOUR LOVE NOTE AGAIN 💜';
+  }, 450);
+});
+
+/* SPECIAL COUNTDOWN - SAVED AFTER REFRESH */
+
+let countdownTimer = null;
+
+function startCountdown(value) {
+  const target = new Date(value).getTime();
+
+  if (!Number.isFinite(target)) return;
+
+  if (countdownTimer) clearInterval(countdownTimer);
+
+  const updateCountdown = () => {
+    const remaining = target - Date.now();
+
+    if (remaining <= 0) {
+      $('countdownDisplay').innerHTML =
+        '<div class="countdown-unit" style="grid-column:1/-1"><strong>💗</strong><span>THE SPECIAL MOMENT IS HERE!</span></div>';
+
+      $('countdownMessage').textContent =
+        'Sending you extra smiles today! 🌷';
+
+      clearInterval(countdownTimer);
+      return;
+    }
+
+    const units = [
+      Math.floor(remaining / 86400000),
+      Math.floor((remaining % 86400000) / 3600000),
+      Math.floor((remaining % 3600000) / 60000),
+      Math.floor((remaining % 60000) / 1000)
+    ];
+
+    const labels = ['DAYS', 'HOURS', 'MINUTES', 'SECONDS'];
+
+    $('countdownDisplay').innerHTML = units.map((n, i) =>
+      <div class="countdown-unit"><strong>${n}</strong><span>${labels[i]}</span></div>
+    ).join('');
+
+    $('countdownMessage').textContent =
+      'Counting down to a beautiful little moment… 💜';
+  };
+
+  updateCountdown();
+  countdownTimer = setInterval(updateCountdown, 1000);
+}
+
+$('countdownBtn').addEventListener('click', () => {
+  const value = $('specialDate').value;
+
+  if (!value) {
+    $('countdownMessage').textContent =
+      'Choose a date and time first. 💜';
+    return;
+  }
+
+  localStorage.setItem('kasheilahSpecialCountdown', value);
+
+  startCountdown(value);
+});
+
+// Restore the saved countdown after refreshing.
+const savedCountdown = localStorage.getItem('kasheilahSpecialCountdown');
+
+if (savedCountdown) {
+  $('specialDate').value = savedCountdown;
+  startCountdown(savedCountdown);
+}
+/* WISH JAR */
+const littleWishes = [
+  "I wish you a day filled with little reasons to smile. 🌸",
+  "I wish your hard work leads you to beautiful opportunities. ✨",
+  "I wish you peace when things feel busy and courage when things feel new. 💜",
+  "I wish you laughter that makes your cheeks hurt. 😂",
+  "I wish you always remember how much you matter. 🦋",
+  "I wish we keep making memories that make us smile. 🌷",
+  "I wish you a lovely surprise before the day is over. 🎁"
+];
+function openWishJar() {
+  $('wishMessage').textContent = littleWishes[Math.floor(Math.random() * littleWishes.length)];
+  $('wishJar').textContent = '💝';
+}
+$('wishBtn').addEventListener('click', openWishJar);
+$('wishJar').addEventListener('click', openWishJar);
+$('wishJar').addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openWishJar(); }
+});
+
+/* PLAYLIST: existing Slowly track plus optional local audio files */
+const playlistAudio = $('playlistAudio');
+$('slowlyPlayBtn').addEventListener('click', async () => {
+  if (playlistAudio.src && playlistAudio.dataset.track === 'slowly' && !playlistAudio.paused) {
+    playlistAudio.pause();
+    $('slowlyPlayBtn').textContent = '▶';
+    return;
+  }
+  playlistAudio.src = 'slowly.mp3';
+  playlistAudio.dataset.track = 'slowly';
+  try {
+    await playlistAudio.play();
+    $('slowlyPlayBtn').textContent = 'Ⅱ';
+  } catch (err) {
+    $('countdownMessage').textContent = 'Make sure slowly.mp3 is in the website folder to play this track.';
+  }
+});
+playlistAudio.addEventListener('ended', () => {
+  $('slowlyPlayBtn').textContent = '▶';
+});
+$('songFiles').addEventListener('change', event => {
+  const files = Array.from(event.target.files || []);
+  files.forEach(file => {
+    const url = URL.createObjectURL(file);
+    const row = document.createElement('div');
+    row.className = 'playlist-track';
+    const play = document.createElement('button');
+    play.type = 'button';
+    play.textContent = '▶';
+    play.setAttribute('aria-label', 'Play ' + file.name);
+    const name = document.createElement('span');
+    name.textContent = file.name;
+    row.append(play, name);
+    $('extraTracks').appendChild(row);
+    play.addEventListener('click', async () => {
+      if (playlistAudio.dataset.track === url && !playlistAudio.paused) {
+        playlistAudio.pause();
+        play.textContent = '▶';
+        return;
+      }
+      playlistAudio.src = url;
+      playlistAudio.dataset.track = url;
+      try {
+        await playlistAudio.play();
+        $('extraTracks').querySelectorAll('button').forEach(b => b.textContent = '▶');
+        play.textContent = 'Ⅱ';
+      } catch (err) {
+        play.textContent = '▶';
+      }
+    });
+  });
+});
+
+/* QUIZ */
+const quizData = [
+  {
+    q: '1. Which song welcomes you into this little world?',
+    a: [['Perfect – Ed Sheeran','wrong'],['Slowly – Meddy','right'],['A random dance song 😂','wrong']],
+    good: 'Correct! Slowly by Meddy is our little soundtrack. 🎵💜',
+    other: 'Not quite! The song waiting for you is Slowly by Meddy. 💜'
+  },
+  {
+    q: '2. Which colours are the main theme of this website?',
+    a: [['Blue and green','wrong'],['Purple and pink','right'],['Orange and black','wrong']],
+    good: 'Yes! Purple and pink all the way. 💜🌸',
+    other: 'It is purple and pink — our dreamy little colours! 💜'
+  },
+  {
+    q: '3. Who made this little surprise?',
+    a: [['Your baby Crussy','right'],['A mystery penguin','wrong'],['The internet fairies 😂','wrong']],
+    good: 'You got it! Made with love by your baby Crussy. ❤️',
+    other: 'Hint: it was made by your baby Crussy. 😂❤️'
+  }
+];
+let quizIndex = 0;
+function renderQuiz() {
+  const item = quizData[quizIndex];
+  $('quizQuestion').textContent = item.q;
+  $('quizOptions').innerHTML = '';
+  item.a.forEach(([label,answer]) => {
+    const button = document.createElement('button');
+    button.className = 'quiz-option';
+    button.textContent = label;
+    button.addEventListener('click', () => {
+      $('quizFeedback').textContent = answer === 'right' ? item.good : item.other;
+      $('quizOptions').querySelectorAll('button').forEach(b => b.disabled = true);
+      $('nextQuizBtn').style.display = 'inline-block';
+      $('nextQuizBtn').textContent = quizIndex === quizData.length - 1 ? 'PLAY AGAIN 💗' : 'NEXT QUESTION 💗';
+    });
+    $('quizOptions').appendChild(button);
+  });
+  $('quizFeedback').textContent = '';
+  $('nextQuizBtn').style.display = 'none';
+}
+$('nextQuizBtn').addEventListener('click', () => {
+  quizIndex = (quizIndex + 1) % quizData.length;
+  renderQuiz();
+});
+renderQuiz();
+
+/* SECRET SURPRISE */
+$('secretRevealBtn').addEventListener('click', () => {
+  $('secretPanel').classList.add('revealed');
+  $('secretRevealBtn').textContent = 'SURPRISE UNWRAPPED 💜';
+});
+
+/* THREE HIDDEN HEARTS */
+let foundHearts = 0;
+document.querySelectorAll('[data-treasure]').forEach(heart => {
+  heart.addEventListener('click', () => {
+    if (heart.dataset.found === 'yes') return;
+    heart.dataset.found = 'yes';
+    heart.textContent = '💗';
+    heart.style.opacity = '1';
+    foundHearts++;
+    $('heartTreasureStatus').textContent = You found ${foundHearts} of 3 hidden hearts! 💗;
+    if (foundHearts === 3) {
+      $('treasureReward').classList.add('revealed');
+      $('heartTreasureStatus').textContent = 'All three hidden hearts found! You unlocked a little reward. 🥹';
+      spawn(18);
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
