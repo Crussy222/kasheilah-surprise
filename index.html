@@ -1428,6 +1428,7 @@ $('noteBtn').addEventListener('click', () => {
   }, 450);
 });
 
+
 /* SPECIAL COUNTDOWN - SAVED AFTER REFRESH */
 
 let countdownTimer = null;
@@ -1443,9 +1444,11 @@ function startCountdown(value) {
     const remaining = target - Date.now();
 
     if (remaining <= 0) {
-     $('countdownDisplay').innerHTML = units.map((n, i) =>
-  `<div class="countdown-unit"><strong>${n}</strong><span>${labels[i]}</span></div>`
-).join('');
+      $('countdownDisplay').innerHTML =
+        '<div class="countdown-unit"><strong>0</strong><span>DAYS</span></div>' +
+        '<div class="countdown-unit"><strong>0</strong><span>HOURS</span></div>' +
+        '<div class="countdown-unit"><strong>0</strong><span>MINUTES</span></div>' +
+        '<div class="countdown-unit"><strong>0</strong><span>SECONDS</span></div>';
 
       $('countdownMessage').textContent =
         'Sending you extra smiles today! 🌷';
@@ -1464,7 +1467,7 @@ function startCountdown(value) {
     const labels = ['DAYS', 'HOURS', 'MINUTES', 'SECONDS'];
 
     $('countdownDisplay').innerHTML = units.map((n, i) =>
-      <div class="countdown-unit"><strong>${n}</strong><span>${labels[i]}</span></div>
+      `<div class="countdown-unit"><strong>${n}</strong><span>${labels[i]}</span></div>`
     ).join('');
 
     $('countdownMessage').textContent =
@@ -1496,6 +1499,7 @@ if (savedCountdown) {
   $('specialDate').value = savedCountdown;
   startCountdown(savedCountdown);
 }
+
 /* WISH JAR */
 const littleWishes = [
   "I wish you a day filled with little reasons to smile. 🌸",
